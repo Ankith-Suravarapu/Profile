@@ -1,218 +1,534 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Resume</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suravarapu Ankith</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/my-avatar-1.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <center>
-    <h1><u>MY RESUME</u></h1>   
-  </center>
-  
-<img src="Ank.png"width=200 hight=200 hspace=150 align =right>
-<h1>Ankith Suravarapu</h1>
 
-<p>Highly motivated and eager to update and upskill. Visionary and would like to move out of my comfort zone to catch up with the
-  current technological advancements. Consistent performer with leadership skills having hands-on expertise in the disciplines of
-  Artificial intelligence, Machine Learning.</p>
+  <!--
+    - #MAIN
+  -->
 
-  <li>ankith.suravarapu@gmail.com</li>
-  <li>github.com/Ankith-Suravarapu<hr></li>
+  <main>
 
-<h2><u>EDUCATION </u></h2>
-<table border= 5 width=1000>
-  <tr>
-          <th><u>Qulafication</u></th>
-          <th><u>University/College</u></th> 
-          <th><u>Branch</u></th>         
-          <th><u>Year of Passing</u></th>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Suravarapu Ankith">Suravarapu Ankith</h1>
+
+          <p class="title">Artificial Intelligence Undergrad</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ankith.suravarapu@gmail.com" class="contact-link">ankith.suravarapu@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+919397932121" class="contact-link">+91 9397932121</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Amritapuri, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Ankith-Suravarapu" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/suravarapu-ankith-3833a9213/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/Ankith_Vasu" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Project</button>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Highly motivated and eager to update and upskill.
+            Visionary and would like to move out of my
+            comfort zone to catch up with the current
+            technological advancements. Consistent
+            performer with leadership skills having hands-on
+            expertise in the disciplines of Artificial
+            intelligence.
+          </p>
+<!-- need to add some mpew text-->
          
-  </tr>
+        </section>      
 
-  <tr>
-    <th>B.Tech</th>
-    <th>Amrita Vishwa Vidyapeetham</th>
-    <th>CSE-AI</th>          
-    <th>2024</th>
-</tr>
+        <div class="modal-container" data-modal-container>
 
-<tr>
-  <th>12th</th>
-  <th>Sasi Junior College</th>
-  <th>MPC</th>          
-  <th>2020</th>
-</tr>
+          <div class="overlay" data-overlay></div>
 
-<tr>
-  <th>10th</th>
-  <th>Bhashyam Public School</th>
-  <th>All Subjects</th>          
-  <th>2018</th>
-</tr>
-</table>
-<hr>
+          <section class="testimonials-modal">
 
-<h2>
-  <u>PROJECTS</u>
-</h2>
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
 
 
-  <h3>
-    <li>
-      Online Shopping (09/2020 - 03/2021)
-    </li>
-  </h3>
-    <p>It is an entire online shopping project. it includes all of the essential
-      features found in a true online shopping project. The primary class in
-      this program will be in control of all the other classes.
-    </p> 
+      <!--
+        - #RESUME
+      -->
 
-    <h3>
-      <li>
-        Credit Card Fraud detection (05/2021 - 07/2021)      </li>
-    </h3>
-      <p>In the Project the Credit Card Fraud detection using XGboost we
-        check whether the transaction is fraud or not by using the XGBoost model and we increased the accuracy of that model.
-         </p> 
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Amrita Vishwa Vidyapeetham, Amritapuri</h4>
+
+              <span>2020 — 2024</span>
+
+              <p class="timeline-text">
+                Currently pursuing Bachelor's in Artificial Intelligence
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sasi Junior College, Velivennu</h4>
+
+              <span>2018 — 2020</span>
+
+              <p class="timeline-text">
+                Studies majoring in Maths,Physics,Chemistry.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bhashyam Public School</h4>
+
+              <span>2010 — 2018</span>
+
+              <p class="timeline-text">
+                Studies All subjects.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Projects</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Obstacle Avoidance Robot</h4>
+
+              <span>January 2022 – May 2022</span>
+             
+
+              <p class="timeline-text">
+                It is an intelligent device that can automatically
+                sense the obstacle in front of it and avoid them
+                  by turning itself. It is designed to allow to
+                  navigate in an unknown environment by avoiding
+                  collisions.
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Hand Gesture Recognition To Control Pc </h4>
+
+              <span>February 2022 – May 2022</span>
+
+              <p class="timeline-text">
+                Gestures are an important aspect of human
+                interaction, both interpersonally and in the
+                context of man-machine interfaces. A gesture is
+                a form of non-verbal communication in which
+                visible bodily actions communicate particular
+                messages, either in place of speech or together
+                and in parallel with words.
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Credit Card Fraud detection</h4>
+
+              <span>May 2021 – July 2021</span>
+
+              <p class="timeline-text">
+                In the Project Credit Card Fraud detection using
+                XGboost, we check whether the transaction is
+                fraud or not by using the XGBoost model and we
+                increased the accuracy of that model.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Online Shopping </h4>
+
+              <span>December 2020 – March 2021</span>
+
+              <p class="timeline-text">
+                It is an entire online shopping project. it includes
+                all of the essential features found in a true online
+                shopping project. The primary class in this
+                program will be in control of all the other classes
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="build-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Skills</h3>
+          </div>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 style="color:hsl(35, 100%, 68%);" class="h4">Technical Skills</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" >Java| Matlab | Python | JavaScript | Data Structure| Hyperledger
+                  </h5>
+              </div>
+            </li>
+
+          </ul>
+
+          <br>
+          
+          
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 style="color:hsl(35, 100%, 68%);" class="h4">Soft Skills</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" >Time Management| Team Lead | Teamwork | Active Listening</h5>
+              </div>
+            </li>
+
+          </ul>
+
+          <br>
+
+          <ul class="skills-list content-card">
+            
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 style="color:hsl(35, 100%, 68%);" class="h4">Operating systems</h5>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5" >Windows | Linux</h5>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="project" data-page="project">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="full stack">
+              <a href="/Tic-Tac-Toe/">
+                <h3 class="project-title">Tic Tac Toe</h3>
+                <p class="project-category">Full Stack Development</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="full stack">
+              <a href="/Wordle/">
+                <h3 class="project-title">Wordle</h3>
+                <p class="project-category">Full Stack Development</p>
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   
-         <h3>
-          <li>
-            Hand Gesture Recognition To Control Pc
-            (11/2021 - 05/2022)        </h3>
-          <p>Gestures are an important aspect of human interaction, both
-            interpersonally and in the context of man-machine interfaces. A
-            gesture is a form of non-verbal communication in which visible bodily actions communicate particular messages, either in place of speech or together and in parallel with words.</p> 
-    
-    <hr>
-
-
-    <h3>
-      <u>HARDWARE PROJECTS</u>
-    </h3>
-    
-    
-      <h3>
-        <li>
-          Obstacle avoidance Robot (01/2022 - 05/2022)
-        </li>
-      </h3>
-        <p>It is an intelligent device that can automatically sense the obstacle
-          in front of it and avoid them by turning itself. It is designed to allow to navigate in an unknown environment by avoiding
-          collisions.
-        </p> 
-    
-</h3>
-<hr>
-
-<h3>
-  <u>SOCIAL RESPONSIBILITY/
-    COMMUNITY OUTREACH</u>
-</h3>
-
-
-  <h3>
-    <li>
-      Spreading awareness regarding Drugs (11/2022)
-    </li>
-  </h3>
-    <p>I lead a team to spread awareness of Drugs in GHSS at
-      kulasekharapuram, Kerala. With activities and presentation as a part of a student social responsibility project
-    </p> 
-
-    <h3>
-      <li>
-        Coastal Clean Up drive (09/2022)
-
-      </li>
-    </h3>
-      <p>On September 17 International Coastal Cleanup Day, I joined
-        hands with Kerala Government, for a campaign initiated by the Government of India - 'Clean Cost, Safe Sea'
-        
-      </p> 
-
-
-</h3>
-<hr>
-
-
-
-
-
-
-<h3>
-  <u>SKILLS</u>
-</h3>
-
-<h3>
-<li>
-  Technical Skills
-</li>
-</h3>
-<p>Java Matlab, Sql, Python,Java Script.
-</p> 
-
-<h3>
-<li>
-  Soft Skills
-</li>
-</h3>
-<p>Time Management, Hard Worker, Teamwork, Active Listening, Ability to prioritize.
-</p> 
-
-<h3>
-<li>
-  Softwares
-</li>
-</h3>
-<p>Linux,Solid Workes,Scala
-</p> 
-<hr>
-
-<h3>
-  <u>CERTIFICATES</u>
-</h3>
-
-<h3>
-  <li>
-    Introduction to Transformers Epiphany
-(11/2020 - 12/2020)
-  </li>
-  
-  <h3>
-    <li>
-      NVIDIA Fundamentals of Deep Learning (11/2024)
-    </li>
-    <hr>
-  </h3>
-<hr>
-
-  <h3>
-    <u>LANGUAGES</u>
-  </h3>
-  <h3>
-    <li>
-      English
-    </li>
-    </h3>
-    <h3>
-      <li>
-        Telugu
-      </li>
-      </h3>
-      <h3>
-        <li>
-          Hindi
-        </li>
-        </h3>
-  <hr>
-  <h3>
-    <u>INTRESTS</u>
-  </h3>
-  <h3>
-    <p>Playing Cricket, Traveling, Social Service, Watching
-      Films.
-
-<hr>
-<hr>
-
 </body>
+
 </html>
